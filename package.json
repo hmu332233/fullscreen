@@ -1,0 +1,16 @@
+{
+  "name": "fullscreen",
+  "version": "0.0.1",
+  "description": "Chrome extension that shows any element to full screen mode.",
+  "main": "index.js",
+  "repository": "https://github.com/hmu332233/fullscreen.git",
+  "author": "minung.han <hmu332233@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.ts"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^4.4.4"
+  }
+}

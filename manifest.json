@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "fullscreen",
+  "version": "0.0.1",
+
+  "description": "Chrome extension that shows any element to full screen mode",
+  
+
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["index.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}

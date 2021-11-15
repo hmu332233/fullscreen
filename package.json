@@ -7,9 +7,10 @@
   "author": "minung.han <hmu332233@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel src/index.ts"
+    "build": "parcel build src/background.ts src/contentScript.ts"
   },
   "devDependencies": {
+    "@types/chrome": "^0.0.163",
     "parcel-bundler": "^1.12.5",
     "typescript": "^4.4.4"
   }

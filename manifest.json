@@ -5,12 +5,22 @@
 
   "description": "Chrome extension that shows any element to full screen mode",
   
-
+  "background": { 
+    "scripts": ["background.js"]
+  },
   "content_scripts": [
     {
       "matches": ["https://*/*"],
-      "js": ["index.js"]
+      "js": ["contentScript.js"]
     }
   ],
-  "permissions": ["activeTab"]
+  "permissions": [
+    "activeTab",
+    "contextMenus"
+  ],
+  "icons": {
+    "16": "images/full-screen.png",
+    "48": "images/full-screen.png",
+    "128": "images/full-screen.png"
+  }
 }
